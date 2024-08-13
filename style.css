@@ -1,0 +1,615 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f8ff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.navlist ul {
+  display: flex;
+  list-style: none;
+  padding-left: 3em;
+}
+
+.navlist li {
+  margin-right: 20px;
+}
+
+.navlist li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons a {
+  margin-right: 10px;
+}
+
+.icons img {
+  width: 25px;
+}
+
+/* Background Image */
+.bg-image img {
+  margin-top: 20px;
+  padding-top: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Main Content */
+.main {
+  padding-top: 100px; /* Adjusted for fixed navbar */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mobile-img img {
+  margin-top: 50px;
+  width: 55vw;
+  margin-left: -30%;
+  height: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-content h1 {
+  margin-bottom: 20px;
+  margin-top: 30%;
+}
+
+.text-content span {
+  font-size: 15px;
+}
+
+.store {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.store a {
+  width: 150px;
+  height: auto;
+}
+
+.store img {
+  width: 100%;
+  height: auto;
+}
+
+.store .AppStore {
+  width: 27%;
+}
+
+/* News Section */
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.news h1 {
+  margin-top: 14%;
+}
+
+.news-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+  margin-top: 45px;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-item img {
+  width: 40vw;
+  height: auto;
+}
+
+.red {
+  color: rgb(228, 86, 218);
+  font-weight: bolder;
+  font-size: small;
+  margin-top: 15px;
+}
+
+.news-item span {
+  display: block;
+  text-align: center;
+}
+
+.button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button a {
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.button span {
+  padding: 13px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #2d85f3;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+/* Second Background Image */
+.second-bg-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url('lower bg image.webp') no-repeat center center/cover;
+  padding: 50px;
+  color: white;
+}
+
+.second-bg-image .content {
+  max-width: 600px;
+  margin-right: 50px;
+}
+
+.second-bg-image .content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.second-bg-image .content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a img {
+  width: auto;
+  height: 27px;
+  display: inline;
+  margin-right: 20px;
+}
+
+.social-media h4 {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.second-bg-image .phone img {
+  width: 55vw;
+  position: relative;
+  border-radius: 20px;
+  margin-right: -320px;
+}
+
+/* Videos Section */
+.videos {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 70px 40px;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 6px 40px #0000005a;
+}
+
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+
+.text {
+  margin-top: 18px;
+  text-decoration: none;
+  color: #2d85f3;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.video-item .youtube img {
+  width: 85px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.youtube {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+/* Job Section */
+.job-section {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  background-color: #2d85f3;
+  padding: 36.5px;
+  color: white;
+  margin-top: 120px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-container {
+  flex: 1;
+  text-align: center;
+}
+
+.text-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: white;  /* Replace with your color preference */
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 250px; /* Adjust height as needed */
+}
+
+.image-container img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  width: 100%;
+}
+
+footer .social-media p {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+footer .social-media a {
+  margin-left: 30px;
+}
+
+footer .social-media img {
+  width: auto;
+  height: 27px;
+}
+
+footer .get-in {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  position: relative;
+  top: -30px;
+}
+
+footer .get-in img {
+  height: auto;
+  width: 10vw;
+}
+
+footer .appstore img {
+  width: 9vw;
+}
+
+footer .bd {
+  border: 1px solid rgb(65, 63, 63);
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+footer .legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .legal-links a {
+  color: #ffffff;
+  margin: 9px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer .address {
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+footer .address p {
+  margin-bottom: 7px;
+  color: #666;
+  font-style: normal;
+}
+
+.footer-logo img {
+  width: 48px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+/* CSS for Responsive Web Design */
+
+/* Viewport meta tag */
+/* Ensure proper rendering and touch zooming */
+/* Adjust initial-scale to fit all mobile devices */
+/* Set width to device width */
+/* Prevent scaling for high-density screens */
+/* Set minimum-scale, maximum-scale, user-scalable to prevent zooming */
+@media only screen and (max-width: 768px) {
+  /* Adjust the viewport for smaller devices */
+  /* Apply styles for devices up to 768px width */
+  meta[name="viewport"] {
+    width: device-width;
+    initial-scale: 1;
+    maximum-scale: 1;
+    user-scalable: no;
+  }
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 40px;
+}
+
+/* Navigation list */
+.navlist ul {
+  padding-left: 0;
+}
+
+.navlist li {
+  margin-right: 10px;
+}
+
+/* Text Content */
+.text-content h1 {
+  font-size: 28px;
+}
+
+.text-content span {
+  font-size: 16px;
+}
+
+/* Store Links */
+.store a {
+  width: 120px;
+}
+
+/* News */
+/* News Container */
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news-item {
+  flex: 0 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+/* News Item */
+.news-item img {
+  width: 100%;
+}
+
+/* Button */
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Second Background Image */
+.second-bg-image .content {
+  max-width: 100%;
+}
+
+.second-bg-image .content h1 {
+  font-size: 36px;
+}
+
+.second-bg-image .phone img {
+  width: 100%;
+}
+
+/* Videos */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-item {
+  flex: 0 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+.video-item .video-thumbnail img {
+  width: 100%;
+}
+
+.video-item .play-button {
+  top: 40%;
+  left: 40%;
+}
+
+.video-item .text {
+  margin-top: 10px;
+}
+
+
+/* Job Section */
+.job-section {
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container h1 {
+  font-size: 28px;
+}
+
+.btn {
+  padding: 12px 24px;
+}
+
+/* Footer */
+footer {
+  padding: 30px;
+}
+
+/* Social Media Icons */
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 5px;
+}
+
+.footer-logo img {
+  width: 30px;
+}
+
+/* Add these styles to your style.css */
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 30px;
+}
+
+.burger-icon div {
+  background-color: #ffffff;
+  height: 3px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .burger-icon {
+    display: flex;
+  }
+  .navlist ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navlist ul.nav-active {
+    display: flex;
+  }
+  .navlist ul li {
+    margin: 10px 0;
+  }
+  .burger-icon.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .burger-icon.toggle .line2 {
+    opacity: 0;
+  }
+  .burger-icon.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
